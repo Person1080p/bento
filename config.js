@@ -11,10 +11,10 @@ const CONFIG = {
 	// └─┘┴ ┴└─┘┴└─┘└─┘
 
 	// General
-	name: 'John',
-	imageBackground: false,
+	name: 'Chris',
+	imageBackground: true,
 	openInNewTab: true,
-	twelveHourFormat: false,
+	twelveHourFormat: true,
 
 	// Greetings
 	greetingMorning: 'Good morning!',
@@ -28,10 +28,10 @@ const CONFIG = {
 	// Weather
 	weatherKey: 'InsertYourAPIKeyHere123456', // Write here your API Key
 	weatherIcons: 'OneDark', // 'Onedark', 'Nord', 'Dark', 'White'
-	weatherUnit: 'C', // 'F', 'C'
+	weatherUnit: 'F', // 'F', 'C'
 	language: 'en', // More languages in https://openweathermap.org/current#multi
 
-	trackLocation: true, // If false or an error occurs, the app will use the lat/lon below
+	trackLocation: false, // If false or an error occurs, the app will use the lat/lon below
 	defaultLatitude: '37.775',
 	defaultLongitude: '-122.419',
 
@@ -53,40 +53,60 @@ const CONFIG = {
 	firstButtonsContainer: [
 		{
 			id: '1',
-			name: 'Github',
-			icon: 'github',
-			link: 'https://github.com/',
+			name: 'Youtube',
+			icon: 'youtube',
+			link: 'https://www.youtube.com/feed/subscriptions',
 		},
 		{
 			id: '2',
 			name: 'Mail',
 			icon: 'mail',
-			link: 'https://mail.protonmail.com/',
-		},
-		{
-			id: '3',
-			name: 'Todoist',
-			icon: 'trello',
-			link: 'https://todoist.com',
+			link: 'http://truenas.local:31007',
 		},
 		{
 			id: '4',
+			name: 'Google',
+			icon: 'search',
+			link: 'https://www.google.com/',
+		},
+		{
+			id: '3',
 			name: 'Calendar',
 			icon: 'calendar',
 			link: 'https://calendar.google.com/calendar/r',
 		},
 		{
 			id: '5',
-			name: 'Reddit',
-			icon: 'glasses',
+			name: 'Discord',
+			icon: 'gamepad-2',
 			link: 'https://reddit.com',
 		},
 		{
 			id: '6',
-			name: 'Odysee',
-			icon: 'youtube',
-			link: 'https://odysee.com/',
+			name: 'Github',
+			icon: 'github',
+			link: 'https://github.com/',
 		},
+		//Smaller Bar
+		{
+			id: '7',
+			name: 'BlueBubbles',
+			icon: 'message-square-more',
+			link: 'https://bluebubbles.app/web/#/',
+		},
+		{
+			id: '8',
+			name: 'Google Messages',
+			icon: 'message-square-text',
+			link: 'https://messages.google.com/web/conversations',
+		},
+		{
+			id: '9',
+			name: 'TextNow',
+			icon: 'message-square-lock',
+			link: 'https://www.textnow.com/messaging',
+		},
+
 	],
 
 	secondButtonsContainer: [
@@ -135,25 +155,26 @@ const CONFIG = {
 	// First Links Container
 	firstlistsContainer: [
 		{
-			icon: 'music',
+			icon: 'server',
 			id: '1',
 			links: [
 				{
-					name: 'Inspirational',
-					link: 'https://www.youtube.com/watch?v=dQw4w9WgXcQ',
+					name: 'TrueNAS',
+					link: 'https://truenas.local/ui/sessions/signin',
 				},
 				{
-					name: 'Classic',
-					link: 'https://www.youtube.com/watch?v=dQw4w9WgXcQ',
+					name: 'Router',
+					link: 'http://tplinkwifi.net/webpages/index.html',
 				},
 				{
-					name: 'Oldies',
-					link: 'https://www.youtube.com/watch?v=dQw4w9WgXcQ',
+					name: 'Plex-Local',
+					link: 'http://truenas.local:32400/web/index.html#!',
 				},
 				{
-					name: 'Rock',
-					link: 'https://www.youtube.com/watch?v=dQw4w9WgXcQ',
+					name: 'XO Lite',
+					link: 'https://192.168.0.113',
 				},
+
 			],
 		},
 		{
@@ -161,20 +182,20 @@ const CONFIG = {
 			id: '2',
 			links: [
 				{
-					name: 'Linkedin',
-					link: 'https://www.linkedin.com',
+					name: 'XOA',
+					link: 'http://192.168.0.240/signin',
 				},
 				{
-					name: 'Dribbble',
-					link: 'https://www.dribbble.com',
+					name: 'Pi-Hole',
+					link: 'http://192.168.0.155/admin/',
 				},
 				{
-					name: 'Trello',
-					link: 'https://www.trello.com',
+					name: 'Security-Cams',
+					link: 'http://192.168.0.64/',
 				},
 				{
-					name: 'Slack',
-					link: 'https://www.slack.com',
+					name: 'qBittorrent',
+					link: 'http://vm.loc:8080/',
 				},
 			],
 		},
